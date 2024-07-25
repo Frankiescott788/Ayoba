@@ -34,6 +34,9 @@ aside > div > .logo > img {
     padding-block: 8px;
     border-left: 4px solid white;
 }
+.msgfile-body{
+    overflow-y: hidden;
+}
 nav{
     background: white;
     position: fixed;
@@ -41,7 +44,7 @@ nav{
     left: 0;
     top: 0;
     z-index: 10;
-    box-shadow: 0px 9px 10px -8px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #e5e5e5;
 }
 .logo > img{
     height: 30px;
@@ -50,6 +53,7 @@ nav{
 main {
     margin-left: 0;
 }
+
 .profile-avatar > img{
     height: 40pt;
     object-fit: cover;
@@ -64,7 +68,18 @@ main {
     border-radius: 50%;
 }
 .msg-user-container{
-    margin-block: 10px;
+    margin-block: 15px;
+    border: 0.1px solid rgba(0, 0, 0, 0.041);
+}
+.messenger-people{
+    height: 60dvh;
+    overflow-y: scroll;
+}
+.messenger-people::-webkit-scrollbar{
+    background: #e5e5e5;
+    width: 5px;
+    border-radius: 50pt;
+    margin-left: 10px;
 }
 .messenger-user-nav{
     margin-top: 30px;
@@ -72,12 +87,44 @@ main {
     padding-block: 10px;
 }
 .message-search-inp{
-    
+    border: 0;
+    outline : none;
+    background: none;
+}
+.search-input{
+    border-radius: 50pt;
+    border: 0.1px solid rgba(0, 0, 0, 0.089);
+}
+.main-messenger-section{
+    margin-top: 50px;
 }
 
- 
-@media only screen and (max-width : 767px) {
+.response-message-child{
+    border-radius: 0px 10px 10px 10px;
+}
+
+.request-message-child{
+    border-radius: 0px 10px 0px 10px;
+}
+.request-message-avatar{
+    margin-top: 70pt;
+}
+.convo-container{
+    overflow-y: scroll;
+    height: 70dvh;
+}
+.convo-container::-webkit-scrollbar{
+    background: #e5e5e5;
+    width: 5px;
+    border-radius: 50pt;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width : 1024px) {
     .main-messenger-section{
         margin-top: 50px;
+    }
+    .msgfile-body{
+        overflow-y: scroll;
     }
 }
