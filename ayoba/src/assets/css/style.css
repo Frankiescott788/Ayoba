@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    font-size: 15px;
 }
 aside{
     position: fixed;
@@ -23,7 +24,8 @@ aside > div > .logo > img {
     border-left: 4px solid white;
 }
 .aside-list > li:nth-child(1){
-    border-color: #ffe100;
+    border-color: #457b9d;
+    background: #457b9d0c;
 }
 .aside-list-bottom {
     margin-top: 30dvh;
@@ -50,6 +52,10 @@ nav{
     height: 30px;
     object-fit: cover;
 }
+.btn-logout{
+    background: #d000001f;
+    color: #d00000;
+}
 main {
     margin-left: 0;
 }
@@ -69,7 +75,10 @@ main {
 }
 .msg-user-container{
     margin-block: 15px;
-    border: 0.1px solid rgba(0, 0, 0, 0.041);
+    border: 0.1px solid #e5e5e5;
+}
+.main-messenger-section-child{
+    border-right: 1px solid #e5e5e5;
 }
 .messenger-people{
     height: 60dvh;
@@ -81,6 +90,12 @@ main {
     border-radius: 50pt;
     margin-left: 10px;
 }
+/* .messenger-people::-webkit-scrollbar-thumb{
+    background: #457b9d28;
+    height: 5px;           
+    width: 5px;
+    border-radius: 50pt;    
+} */
 .messenger-user-nav{
     margin-top: 30px;
     border-bottom: 1px solid #e5e5e5;
@@ -105,13 +120,15 @@ main {
 
 .request-message-child{
     border-radius: 0px 10px 0px 10px;
+    background: #457b9dc7;
+    color: white;
 }
 .request-message-avatar{
     margin-top: 70pt;
 }
 .convo-container{
     overflow-y: scroll;
-    height: 70dvh;
+    height: 68dvh;
 }
 .convo-container::-webkit-scrollbar{
     background: #e5e5e5;
@@ -119,6 +136,39 @@ main {
     border-radius: 50pt;
     margin-left: 10px;
 }
+.convo-container::-webkit-scrollbar-track{
+    height: 20px;
+}
+.svgs{
+    color: rgba(0, 0, 0, 0.521);
+}
+.svgs-send{
+    color: white;
+}
+.message-input-container{
+    border-top: 1px solid rgba(0, 0, 0, 0.151);
+}
+.msg-input{
+    border: none;
+    outline: none;
+}
+.btn-send{
+    background:  linear-gradient(to right, #457b9d, #457b9dc5);
+    color: white;
+    transition: .2s ease-in-out;
+}
+.btn-send:hover{
+    background: linear-gradient(to right, #457b9d, #457b9dce);
+    color: white;
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+.online-indicator-div{
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
 
 @media only screen and (max-width : 1024px) {
     .main-messenger-section{
