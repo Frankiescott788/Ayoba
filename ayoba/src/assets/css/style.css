@@ -194,7 +194,7 @@ main {
         margin-left: 0;
     }
     .chatts{
-        height: 75dvh; 
+        height: 77dvh; 
         overflow-y: scroll;
     }
     .input-message-mobile{
