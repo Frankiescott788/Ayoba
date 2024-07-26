@@ -197,4 +197,9 @@ main {
         height: 75dvh; 
         overflow-y: scroll;
     }
+    .input-message-mobile{
+        border: none;
+        background: none;
+        outline: none;
+    }
 }
