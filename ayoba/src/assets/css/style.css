@@ -57,7 +57,7 @@ nav{
     color: #d00000;
 }
 main {
-    margin-left: 0;
+    margin-left: 10dvh;
 }
 
 .profile-avatar > img{
