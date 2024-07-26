@@ -48,10 +48,6 @@ nav{
     z-index: 10;
     border-bottom: 1px solid #e5e5e5;
 }
-.humburge-btn{
-    background: none;
-    box-shadow: none;
-}
 .logo > img{
     height: 30px;
     object-fit: cover;
@@ -61,7 +57,7 @@ nav{
     color: #d00000;
 }
 main {
-    margin-left: 0;
+    margin-left: 10dvh;
 }
 
 .profile-avatar > img{
