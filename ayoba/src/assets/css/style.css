@@ -11,6 +11,7 @@ aside{
     top: 0;
     bottom: 0;
     border-right: 1px solid #e5e5e5;
+    background: white;
 }
 aside > div > .logo > img {
     height: 30pt;
@@ -224,5 +225,10 @@ main {
     }
     .bottom-nav > li{
         margin-inline: 30px;
+    }
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    main {
+        margin-left: 10dvw;
     }
 }
