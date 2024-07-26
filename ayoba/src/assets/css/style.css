@@ -126,10 +126,6 @@ main {
 .request-message-avatar{
     margin-top: 70pt;
 }
-.convo-container{
-    overflow-y: scroll;
-    height: 68dvh;
-}
 .convo-container::-webkit-scrollbar{
     background: #e5e5e5;
     width: 5px;
@@ -139,6 +135,22 @@ main {
 .convo-container::-webkit-scrollbar-track{
     height: 20px;
 }
+.chat-container{
+    height: 75dvh;
+}
+.res-msg-bubble{
+    background: #e5e5e5;
+    color: black;
+}
+.req-msg-bubble{
+    background: #457b9d;
+    color: white;
+}
+.chatts{
+    height: 75dvh; 
+    overflow-y: scroll;
+}
+
 .svgs{
     color: rgba(0, 0, 0, 0.521);
 }

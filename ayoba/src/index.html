@@ -6,6 +6,8 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.2.0/dist/css/fastbootstrap.min.css" rel="stylesheet" integrity="sha256-V6lu+OdYNKTKTsVFBuQsyIlDiRWiOmtC8VQ8Lzdm2i4=" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>     
     <link rel="stylesheet" href="./assets/css/style.css">
     
 </head>
@@ -107,25 +109,58 @@
                     <img src="./assets/images/Ayoba_Final_Logo_Blue_d3c16fc572.png" alt="">
                 </div>
             </div>
-            <div class="d-flex gap-2">
-                <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-                    <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="1.5" />
-                    <path d="M14.75 9.5C14.75 11.0188 13.5188 12.25 12 12.25C10.4812 12.25 9.25 11.0188 9.25 9.5C9.25 7.98122 10.4812 6.75 12 6.75C13.5188 6.75 14.75 7.98122 14.75 9.5Z" stroke="currentColor" stroke-width="1.5" />
-                    <path d="M5.49994 19.0001L6.06034 18.0194C6.95055 16.4616 8.60727 15.5001 10.4016 15.5001H13.5983C15.3926 15.5001 17.0493 16.4616 17.9395 18.0194L18.4999 19.0001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg></button>
-                <button class="btn position-relative">
-                    <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-                        <path d="M2.52992 14.394C2.31727 15.7471 3.268 16.6862 4.43205 17.1542C8.89481 18.9486 15.1052 18.9486 19.5679 17.1542C20.732 16.6862 21.6827 15.7471 21.4701 14.394C21.3394 13.5625 20.6932 12.8701 20.2144 12.194C19.5873 11.2975 19.525 10.3197 19.5249 9.27941C19.5249 5.2591 16.1559 2 12 2C7.84413 2 4.47513 5.2591 4.47513 9.27941C4.47503 10.3197 4.41272 11.2975 3.78561 12.194C3.30684 12.8701 2.66061 13.5625 2.52992 14.394Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M9 21C9.79613 21.6219 10.8475 22 12 22C13.1525 22 14.2039 21.6219 15 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></i>
-                    <span class="position-absolute top-0 start-100 translate-middle p-1 text-bg-danger border border-light rounded-circle">
-                      <span class="visually-hidden">New alerts</span>
-                    </span>
-                </button>
-               
+            <div class="d-flex gap-5">
+                <div class="dropdown dropdown-end">
+                  <div tabindex="0" class="mt-3">
+                    <div class="indicator">
+                        <span class="badge badge-sm indicator-item">8</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                            <path d="M2.52992 14.394C2.31727 15.7471 3.268 16.6862 4.43205 17.1542C8.89481 18.9486 15.1052 18.9486 19.5679 17.1542C20.732 16.6862 21.6827 15.7471 21.4701 14.394C21.3394 13.5625 20.6932 12.8701 20.2144 12.194C19.5873 11.2975 19.525 10.3197 19.5249 9.27941C19.5249 5.2591 16.1559 2 12 2C7.84413 2 4.47513 5.2591 4.47513 9.27941C4.47503 10.3197 4.41272 11.2975 3.78561 12.194C3.30684 12.8701 2.66061 13.5625 2.52992 14.394Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M9 21C9.79613 21.6219 10.8475 22 12 22C13.1525 22 14.2039 21.6219 15 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
 
-                  
-            </div>
+                    </div>
+                  </div>
+                  <div
+                    tabindex="0"
+                    class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                    <div class="card-body">
+                      <span class="text-lg font-bold">8 Items</span>
+                      <span class="text-info">Subtotal: $999</span>
+                      <div class="card-actions">
+                        <button class="btn btn-primary btn-block">View cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown dropdown-end">
+                  <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                      <img
+                        alt="Tailwind CSS Navbar component"
+                        src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                    </div>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li>
+                      <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M7.5 17C9.8317 14.5578 14.1432 14.4428 16.5 17M14.4951 9.5C14.4951 10.8807 13.3742 12 11.9915 12C10.6089 12 9.48797 10.8807 9.48797 9.5C9.48797 8.11929 10.6089 7 11.9915 7C13.3742 7 14.4951 8.11929 14.4951 9.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        Profile
+                        
+                      </a>
+                    </li>
+                    <li><a> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs">
+                        <path d="M7.02331 5.5C4.59826 7.11238 3 9.86954 3 13C3 17.9706 7.02944 22 12 22C16.9706 22 21 17.9706 21 13C21 9.86954 19.4017 7.11238 16.9767 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 2V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg> Logout</a></li>
+                  </ul>
+                </div>
+              </div>
             
         </div>
     </nav>
@@ -265,127 +300,184 @@
                             </div>
 
                             <div class="container convo-container">
+                                <div class="row chatts" style="" >
+                                    <div class="col-12"> 
 
-                                <div class="d-flex justify-content-end ">
-                                    <div class="col-7 my-3 ">
-                                        <div class="d-flex gap-3 request-message-container">
-                                        
-                                         <div class=" py-3 px-4 request-message-child">
-                                             <div>
-                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo!</p>
-                                             </div>
-                                             <div class="d-flex justify-content-end gap-3 ">
-                                                <div>19 : 00</div>
-                                                <div>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="white" fill="none">
-                                                        <path d="M2.5 13.8333L6 17.5L7.02402 16.4272M16.5 6.5L10.437 12.8517" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M7.5 13.8333L11 17.5L21.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </div>
-                                             </div>
-                                         </div>
-
-                                         <div class="request-message-avatar">
-                                            <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611704.jpg?semt=ais_user" class="avatar" alt="">
-                                        </div>
-                                        
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="d-flex justify-content-start response-text-container">
-                                    <div class="col-7 my-3 ">
-                                        <div class="d-flex gap-3">
-                                         <div>
-                                             <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611704.jpg?semt=ais_user" class="avatar" alt="">
-                                         </div>
-                                         <div class="bg-light py-3 px-4 response-message-child">
-                                             <div>
-                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo!</p>
-                                             </div>
-                                             <div class="d-flex justify-content-end gap-3 ">
-                                                 <div>19 : 00</div>
-                                             </div>
-                                         </div>
-                                        </div>
-                                     </div>
-                                </div>
-
-                                <div class="d-flex justify-content-end ">
-                                    <div class="col-7 my-3 ">
-                                        <div class="d-flex gap-3 request-message-container">
-                                        
-                                         <div class="py-3 px-4 request-message-child">
-                                             <div>
-                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo!</p>
-                                             </div>
-                                             <div class="d-flex justify-content-end gap-3 ">
-                                                <div>19 : 00</div>
-                                                <div>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="white" fill="none">
-                                                        <path d="M2.5 13.8333L6 17.5L7.02402 16.4272M16.5 6.5L10.437 12.8517" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M7.5 13.8333L11 17.5L21.5 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </svg>
-                                                </div>
-                                             </div>
-                                         </div>
-
-                                         <div class="request-message-avatar">
-                                            <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611704.jpg?semt=ais_user" class="avatar" alt="">
-                                        </div>
-                                        
-                                        </div>
-                                     </div>
-                                </div>
-
-                                <div class="d-flex justify-content-start response-text-container">
-                                    <div class="col-7 my-3 ">
-                                        <div class="d-flex gap-3">
-                                         <div>
-                                             <img src="https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611704.jpg?semt=ais_user" class="avatar" alt="">
-                                         </div>
-                                         <div class="bg-light py-3 px-4 response-message-child">
-                                             <div>
-                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo!</p>
-                                             </div>
-                                             <div class="d-flex justify-content-end gap-3 ">
-                                                 <div>19 : 00</div>
-                                             </div>
-                                         </div>
-                                        </div>
-                                     </div>
-                                </div>
-
-                                
-                            </div>
-                            <div class="col-12 " style="border-top: 1px solid rgba(0, 0, 0, 0.226);">
-                                <div class="d-flex  justify-content-between">
-                                    <div class="d-flex message-input-containe mt-3">
-                                        <div >
-                                            <input type="text" class="msg-input mt-1" placeholder="Type your message here..." id="exampleInputPassword1" style="width: auto;"/>
-                                        </div>
-                                    </div>
-                                    <div class="my-3 d-flex gap-3">
-                                        <button class="btn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs">
-                                                <path d="M8 8.00049V6.00049C8 3.79135 9.79086 2.00049 12 2.00049C14.2091 2.00049 16 3.79135 16 6.00049V18.0005C16 20.2096 14.2091 22.0005 12 22.0005C9.79086 22.0005 8 20.2096 8 18.0005V13.5005C8 12.1198 9.11929 11.0005 10.5 11.0005C11.8807 11.0005 13 12.1198 13 13.5005V16.0005" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </button>
-                                        <button class="btn d-flex gap-2 btn-send px-5">
-                                            <div class="mt-1">
-                                                <span style="font-size: 16px;">send</span>
+                                        <div class="chat chat-start">
+                                            <div class="chat-image avatar">
+                                              <div class="w-10 rounded-full">
+                                                <img
+                                                  alt="Tailwind CSS chat bubble component"
+                                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                              </div>
                                             </div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs-send">
-                                                <path d="M11.922 4.79004C16.6963 3.16245 19.0834 2.34866 20.3674 3.63261C21.6513 4.91656 20.8375 7.30371 19.21 12.078L18.1016 15.3292C16.8517 18.9958 16.2267 20.8291 15.1964 20.9808C14.9195 21.0216 14.6328 20.9971 14.3587 20.9091C13.3395 20.5819 12.8007 18.6489 11.7231 14.783C11.4841 13.9255 11.3646 13.4967 11.0924 13.1692C11.0134 13.0742 10.9258 12.9866 10.8308 12.9076C10.5033 12.6354 10.0745 12.5159 9.21705 12.2769C5.35111 11.1993 3.41814 10.6605 3.0909 9.64127C3.00292 9.36724 2.97837 9.08053 3.01916 8.80355C3.17088 7.77332 5.00419 7.14834 8.6708 5.89838L11.922 4.79004Z" stroke="currentColor" stroke-width="1.5" />
-                                            </svg>
-                                        </button>
-                                    </div>
-                                </div>
+                                            <div class="chat-header">
+                                              Obi-Wan Kenobi
+                                              <time class="text-xs opacity-50">12:45</time>
+                                            </div>
+                                            <div class="chat-bubble res-msg-bubble">You were the Chosen One!</div>
+                                            <div class="chat-footer opacity-50">Delivered</div>
+                                        </div>
 
-                               
-                               
-                                
+                                        <div class="chat chat-end">
+                                            <div class="chat-image avatar">
+                                              <div class="w-10 rounded-full">
+                                                <img
+                                                  alt="Tailwind CSS chat bubble component"
+                                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                              </div>
+                                            </div>
+                                            <div class="chat-header">
+                                              Anakin
+                                              <time class="text-xs opacity-50">12:46</time>
+                                            </div>
+                                            <div class="chat-bubble req-msg-bubble">I hate you!</div>
+                                            <div class="chat-footer opacity-50">Seen at 12:46</div>
+                                        </div>
+
+                                        <div class="chat chat-start">
+                                            <div class="chat-image avatar">
+                                              <div class="w-10 rounded-full">
+                                                <img
+                                                  alt="Tailwind CSS chat bubble component"
+                                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                              </div>
+                                            </div>
+                                            <div class="chat-header">
+                                              Anakin
+                                              <time class="text-xs opacity-50">12:46</time>
+                                            </div>
+                                            <div class="chat-bubble">I hate you!</div>
+                                            <div class="chat-footer opacity-50">Seen at 12:46</div>
+                                        </div>
+
+                                        <div class="chat chat-start">
+                                            <div class="chat-image avatar">
+                                              <div class="w-10 rounded-full">
+                                                <img
+                                                  alt="Tailwind CSS chat bubble component"
+                                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                              </div>
+                                            </div>
+                                            <div class="chat-header">
+                                              Anakin
+                                              <time class="text-xs opacity-50">12:46</time>
+                                            </div>
+                                            <div class="chat-bubble">I hate you!</div>
+                                            <div class="chat-footer opacity-50">Seen at 12:46</div>
+                                        </div>
+
+                                        <div class="chat chat-end">
+                                            <div class="chat-image avatar">
+                                              <div class="w-10 rounded-full">
+                                                <img
+                                                  alt="Tailwind CSS chat bubble component"
+                                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                              </div>
+                                            </div>
+                                            <div class="chat-header">
+                                              Anakin
+                                              <time class="text-xs opacity-50">12:46</time>
+                                            </div>
+                                            <div class="chat-bubble">I hate you!</div>
+                                            <div class="chat-footer opacity-50">Seen at 12:46</div>
+                                        </div>
+
+                                        <div class="chat chat-start">
+                                            <div class="chat-image avatar">
+                                              <div class="w-10 rounded-full">
+                                                <img
+                                                  alt="Tailwind CSS chat bubble component"
+                                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                              </div>
+                                            </div>
+                                            <div class="chat-header">
+                                              Anakin
+                                              <time class="text-xs opacity-50">12:46</time>
+                                            </div>
+                                            <div class="chat-bubble">I hate you!</div>
+                                            <div class="chat-footer opacity-50">Seen at 12:46</div>
+                                        </div>
+
+                                        <div class="chat chat-end">
+                                            <div class="chat-image avatar">
+                                              <div class="w-10 rounded-full">
+                                                <img
+                                                  alt="Tailwind CSS chat bubble component"
+                                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                              </div>
+                                            </div>
+                                            <div class="chat-header">
+                                              Anakin
+                                              <time class="text-xs opacity-50">12:46</time>
+                                            </div>
+                                            <div class="chat-bubble">I hate you!</div>
+                                            <div class="chat-footer opacity-50">Seen at 12:46</div>
+                                        </div>
+
+                                        <div class="chat chat-start">
+                                            <div class="chat-image avatar">
+                                              <div class="w-10 rounded-full">
+                                                <img
+                                                  alt="Tailwind CSS chat bubble component"
+                                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                              </div>
+                                            </div>
+                                            <div class="chat-header">
+                                              Anakin
+                                              <time class="text-xs opacity-50">12:46</time>
+                                            </div>
+                                            <div class="chat-bubble">I hate you!</div>
+                                            <div class="chat-footer opacity-50">Seen at 12:46</div>
+                                        </div>
+
+                                        <div class="chat chat-end">
+                                            <div class="chat-image avatar">
+                                              <div class="w-10 rounded-full">
+                                                <img
+                                                  alt="Tailwind CSS chat bubble component"
+                                                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                              </div>
+                                            </div>
+                                            <div class="chat-header">
+                                              Anakin
+                                              <time class="text-xs opacity-50">12:46</time>
+                                            </div>
+                                            <div class="chat-bubble">I hate you!</div>
+                                            <div class="chat-footer opacity-50">Seen at 12:46</div>
+                                        </div>
+
+
+
+
+                                    </div>
+                                   
+                                </div>
+                                <div class="col-12 " style="border-top: 1px solid rgba(0, 0, 0, 0.226)">
+                                    <div class="d-flex  justify-content-between">
+                                        <div class="d-flex message-input-containe mt-3">
+                                            <div >
+                                                <input type="text" class="msg-input mt-1" placeholder="Type your message here..." id="exampleInputPassword1" style="width: auto;"/>
+                                            </div>
+                                        </div>
+                                        <div class="my-3 d-flex gap-3">
+                                            <button class="btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs">
+                                                    <path d="M8 8.00049V6.00049C8 3.79135 9.79086 2.00049 12 2.00049C14.2091 2.00049 16 3.79135 16 6.00049V18.0005C16 20.2096 14.2091 22.0005 12 22.0005C9.79086 22.0005 8 20.2096 8 18.0005V13.5005C8 12.1198 9.11929 11.0005 10.5 11.0005C11.8807 11.0005 13 12.1198 13 13.5005V16.0005" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                            <button class="btn d-flex gap-2 btn-send px-5">
+                                                <div class="mt-1">
+                                                    <span style="font-size: 16px;">send</span>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs-send">
+                                                    <path d="M11.922 4.79004C16.6963 3.16245 19.0834 2.34866 20.3674 3.63261C21.6513 4.91656 20.8375 7.30371 19.21 12.078L18.1016 15.3292C16.8517 18.9958 16.2267 20.8291 15.1964 20.9808C14.9195 21.0216 14.6328 20.9971 14.3587 20.9091C13.3395 20.5819 12.8007 18.6489 11.7231 14.783C11.4841 13.9255 11.3646 13.4967 11.0924 13.1692C11.0134 13.0742 10.9258 12.9866 10.8308 12.9076C10.5033 12.6354 10.0745 12.5159 9.21705 12.2769C5.35111 11.1993 3.41814 10.6605 3.0909 9.64127C3.00292 9.36724 2.97837 9.08053 3.01916 8.80355C3.17088 7.77332 5.00419 7.14834 8.6708 5.89838L11.922 4.79004Z" stroke="currentColor" stroke-width="1.5" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>        
+                             </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                <div>
