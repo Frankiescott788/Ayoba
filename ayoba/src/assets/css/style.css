@@ -66,7 +66,7 @@ main {
     border-radius: 50%;
 }
 .message-profile-container{
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #e5e5e5;
 }
 .message-avatar > img{
     height: 40pt;
