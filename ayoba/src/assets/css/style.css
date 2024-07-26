@@ -194,7 +194,7 @@ main {
         margin-left: 0;
     }
     .chatts{
-        height: 65dvh; 
+        height: 75dvh; 
         overflow-y: scroll;
     }
 }
