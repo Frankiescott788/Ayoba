@@ -203,6 +203,7 @@ main {
         right: 0;
         bottom: 0;
         z-index: 30;
+        border-radius: 50pt;
     }
     .input-message-mobile{
         border: none;
