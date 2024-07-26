@@ -214,4 +214,15 @@ main {
     .column-12{
         margin-top: 3rem;
     }
+    .mobile-aside-nav{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: white;
+        z-index : 40;
+    }
+    .bottom-nav > li{
+        margin-inline: 30px;
+    }
 }
