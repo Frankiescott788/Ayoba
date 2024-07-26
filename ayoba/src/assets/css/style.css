@@ -189,4 +189,7 @@ main {
     .msgfile-body{
         overflow-y: scroll;
     }
+    main {
+        margin-left: 0dvh;
+    }
 }
