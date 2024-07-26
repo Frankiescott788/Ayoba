@@ -48,6 +48,7 @@ nav{
     z-index: 10;
     border-bottom: 1px solid #e5e5e5;
 }
+
 .logo > img{
     height: 30px;
     object-fit: cover;
@@ -191,5 +192,9 @@ main {
     }
     main {
         margin-left: 0;
+    }
+    .chatts{
+        height: 65dvh; 
+        overflow-y: scroll;
     }
 }
