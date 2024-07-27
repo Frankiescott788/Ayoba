@@ -25,10 +25,10 @@ const myChart = new Chart(ctx, {
     data: {
         labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
         datasets: [{
-            label: 'Sample Data',
+            label: 'Analystics overview',
             data: [10, 5, 30, 40, 30],
             borderColor: '#457b9d', // Line color
-            borderWidth: 2,
+            borderWidth: 3,
             fill: true, // Enables the background fill under the line
             backgroundColor: gradient, // Sets the gradient as the background color
             tension: 0.4 // Smooth curve for the line
