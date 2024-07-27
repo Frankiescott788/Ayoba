@@ -25,7 +25,7 @@ const myChart = new Chart(ctx, {
     data: {
         labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
         datasets: [{
-            label: 'Analystics overview',
+            label: 'Analytics Overview',
             data: [10, 5, 30, 40, 30],
             borderColor: '#457b9d', // Line color
             borderWidth: 3,
@@ -35,6 +35,13 @@ const myChart = new Chart(ctx, {
         }]
     },
     options: {
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'transparent' // Hides the color box next to the label
+                }
+            }
+        },
         scales: {
             x: {
                 grid: {
