@@ -13,3 +13,43 @@ msg_container.forEach(container =>{
     })
 });
 
+const ctx = document.getElementById('myChart').getContext('2d');
+
+// Create gradient
+const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+gradient.addColorStop(0, 'rgba(69, 123, 157, 0.2)'); // Start with color #457b9d at 20% opacity
+gradient.addColorStop(1, 'rgba(69, 123, 157, 0)');   // End with transparent
+
+const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Label 1', 'Label 2', 'Label 3', 'Label 4', 'Label 5'],
+        datasets: [{
+            label: 'Sample Data',
+            data: [10, 5, 30, 40, 30],
+            borderColor: '#457b9d', // Line color
+            borderWidth: 2,
+            fill: true, // Enables the background fill under the line
+            backgroundColor: gradient, // Sets the gradient as the background color
+            tension: 0.4 // Smooth curve for the line
+        }]
+    },
+    options: {
+        scales: {
+            x: {
+                grid: {
+                    display: false // Hides X-axis grid lines
+                }
+            },
+            y: {
+                beginAtZero: true,
+                grid: {
+                    display: false // Hides Y-axis grid lines
+                }
+            }
+        }
+    }
+});
+
+
+

@@ -208,6 +208,9 @@ main {
 .dash-card-indicator{
     font-size: 20px;
 }
+canvas{
+    background: white;
+}
 
 @media only screen and (max-width : 1024px) {
     .main-messenger-section{
