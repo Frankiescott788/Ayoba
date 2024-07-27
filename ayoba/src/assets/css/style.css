@@ -201,14 +201,15 @@ main {
 }
 .dash-card-number{
     font-size: 24px;
+    color: rgba(0, 0, 0, 0.589);
 }
 .dash-card-indicator{
     font-size: 20px;
 }
 canvas{
     background: white;
-    height: 250;
-    width: 400;
+    height: 350;
+    width: 500;
     box-shadow: 0px 6px 41px -4px rgba(0,0,0,0.1);
     border-radius: 6px;
 }
@@ -275,6 +276,6 @@ canvas{
         margin-block: 10px;
     }
     .dashboard-main{
-        padding-top: 15dvh;
+        padding-top: 12dvh;
     }
 }
