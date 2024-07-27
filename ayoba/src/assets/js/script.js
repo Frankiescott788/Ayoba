@@ -8,7 +8,7 @@ msg_container.forEach(container =>{
             console.log('restricted for mobile view', device_width); 
 
         } else {
-            window.location.href = "./ayoba/src/assets/pages/mobile-chat.html"; // if it is a suitable device, then it will route to the mobile view chats
+            window.location.href = "./mobile-chat.html"; // if it is a suitable device, then it will route to the mobile view chats
         };
     })
 });
