@@ -59,7 +59,8 @@ nav{
     color: #d00000;
 }
 main {
-    margin-left: 10dvh;
+    margin-left: 5dvw;
+    padding-top: 15dvh;
 }
 
 .profile-avatar > img{
@@ -182,7 +183,31 @@ main {
     height: 5px;
     border-radius: 5px;
 }
-
+.greeting-text{
+    font-size: 24px;
+}
+.dashboard-icons{
+    background: #457b9d;
+    padding-inline: 5px;
+    padding-block: 5px;
+    border-radius: 50%;
+}
+.dashboard-cards{
+    padding: 20px;
+    box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    background: white;
+}
+.das-card-percentage{
+    color: green;
+    font-weight: bold;
+}
+.dash-card-number{
+    font-size: 24px;
+}
+.dash-card-indicator{
+    font-size: 20px;
+}
 
 @media only screen and (max-width : 1024px) {
     .main-messenger-section{
@@ -226,9 +251,15 @@ main {
     .bottom-nav > li{
         margin-inline: 30px;
     }
+    .dashboard-cards{
+        margin-block: 10px;
+    }
 }
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
     main {
         margin-left: 10dvw;
+    }
+    .dashboard-cards{
+        margin-block: 10px;
     }
 }
