@@ -210,6 +210,8 @@ main {
 }
 canvas{
     background: white;
+    height: 250;
+    width: 400;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -256,6 +258,11 @@ canvas{
     }
     .dashboard-cards{
         margin-block: 10px;
+    }
+    canvas{
+        background: white;
+        height: 300;
+        width: auto;
     }
 }
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
