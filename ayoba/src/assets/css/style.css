@@ -268,4 +268,7 @@ canvas{
     .dashboard-cards{
         margin-block: 10px;
     }
+    .dashboard-main{
+        padding-top: 15dvh;
+    }
 }
