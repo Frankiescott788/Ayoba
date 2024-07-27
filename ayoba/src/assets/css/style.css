@@ -113,9 +113,6 @@ main {
     border-radius: 50pt;
     border: 0.1px solid rgba(0, 0, 0, 0.089);
 }
-.main-messenger-section{
-    margin-top: 50px;
-}
 
 .response-message-child{
     border-radius: 0px 10px 10px 10px;
@@ -261,7 +258,7 @@ canvas{
     }
     canvas{
         background: white;
-        height: 300;
+        height: 500;
         width: auto;
     }
 }
