@@ -245,6 +245,42 @@ canvas{
 .orders-container{
     margin-bottom: 20px;
 }
+.login-form{
+    padding-top: 25dvh;
+}
+.login-message{
+    margin-top: 24pt;
+}
+
+.username-input{
+    background: none;
+}
+.sign-in-btn{
+    background : #457b9d;
+    padding-inline: 8rem;
+    padding-block: 8pt;
+    color: white;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 0px 22px 47px -17px #457b9d;
+    transition: .2s ease-in-out;
+    
+}
+.sign-in-btn:active{
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+.sign-in-btn:hover {
+    border-radius: none;
+}
+.sign-in-head{
+    font-size: 24px;
+}
+.sign-pic{
+    height: 70px;
+    object-fit: cover;
+}
+
 @media only screen and (max-width : 1024px) {
     
     .msgfile-body{
