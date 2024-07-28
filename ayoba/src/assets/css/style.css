@@ -38,7 +38,7 @@ aside > div > .logo > img {
     border-left: 4px solid white;
 }
 .msgfile-body{
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 nav{
     background: white;
