@@ -24,7 +24,7 @@ aside > div > .logo > img {
     padding-block: 15px;
     border-left: 4px solid white;
 }
-.aside-list > li:nth-child(1){
+.aside-list > li:nth(1){
     border-color: #457b9d;
     background: #457b9d0c;
 }
