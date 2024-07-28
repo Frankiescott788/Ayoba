@@ -9,6 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>     
     <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .chats{
+            background: #457b9d0c;
+            margin-block: 5px;
+            padding-inline: 20px;
+            padding-block: 15px;
+            border-right: 4px solid #457b9d;
+        }
+    </style>
     
 </head>
 <body class="msgfile-body">
@@ -19,7 +28,7 @@
                 <img src="../images/ayoba_logo.png" class="img-fluid" alt="logo">
             </div>
             <ul class="list-unstyled aside-list mt-3">
-                <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Home" onclick="window.location.href = `./ayoba/src/assets/pages/dashboard.html`">
+                <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Home" onclick="window.location.href = `../../../../index.html`">
                     <div>
                         <div> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs">
                             <path d="M2 18C2 16.4596 2 15.6893 2.34673 15.1235C2.54074 14.8069 2.80693 14.5407 3.12353 14.3467C3.68934 14 4.45956 14 6 14C7.54044 14 8.31066 14 8.87647 14.3467C9.19307 14.5407 9.45926 14.8069 9.65327 15.1235C10 15.6893 10 16.4596 10 18C10 19.5404 10 20.3107 9.65327 20.8765C9.45926 21.1931 9.19307 21.4593 8.87647 21.6533C8.31066 22 7.54044 22 6 22C4.45956 22 3.68934 22 3.12353 21.6533C2.80693 21.4593 2.54074 21.1931 2.34673 20.8765C2 20.3107 2 19.5404 2 18Z" stroke="currentColor" stroke-width="1.5" />
@@ -30,7 +39,7 @@
                     </div>
                 </li>
 
-                <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Chat">
+                <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Chat" class="chats">
                     <div>
                         <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs">
                             <path d="M8.5 14.5H15.5M8.5 9.5H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -60,7 +69,7 @@
                     </div>
                 </li>
 
-                <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Business intelligence">
+                <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Business intelligence" onclick="window.location.href = `../../../../BI.html`">
                     <div>
                         <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs">
                             <path d="M7 18V16M12 18V15M17 18V13M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -226,6 +235,20 @@
                                 </svg>
                                 <div>
                                     Coupons
+                                </div>
+                            </div> 
+                            
+                        </li>
+
+                        <li class="d-flex" onclick="window.location.href = `../../../../BI.html`">
+                            <div class="d-flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" class="svgs">
+                                    <path d="M2.46439 9.34375C2.21585 9.34375 1.98905 9.14229 2.00048 8.87895C2.06739 7.33687 2.25487 6.33298 2.78014 5.53884C3.08234 5.08196 3.45771 4.68459 3.88929 4.36468C5.05581 3.5 6.70145 3.5 9.99272 3.5H14.0074C17.2987 3.5 18.9443 3.5 20.1109 4.36468C20.5424 4.68459 20.9178 5.08196 21.22 5.53884C21.7452 6.33289 21.9327 7.33665 21.9996 8.87843C22.0111 9.14208 21.784 9.34375 21.5352 9.34375C20.1494 9.34375 19.026 10.533 19.026 12C19.026 13.467 20.1494 14.6562 21.5352 14.6562C21.784 14.6562 22.0111 14.8579 21.9996 15.1216C21.9327 16.6634 21.7452 17.6671 21.22 18.4612C20.9178 18.918 20.5424 19.3154 20.1109 19.6353C18.9443 20.5 17.2987 20.5 14.0074 20.5H9.99272C6.70145 20.5 5.05581 20.5 3.88929 19.6353C3.45771 19.3154 3.08234 18.918 2.78014 18.4612C2.25487 17.667 2.06739 16.6631 2.00048 15.1211C1.98905 14.8577 2.21585 14.6562 2.46439 14.6562C3.85018 14.6562 4.97358 13.467 4.97358 12C4.97358 10.533 3.85018 9.34375 2.46439 9.34375Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    <path d="M9.50006 14.5L14.5001 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.50006 9.5H9.51129M14.4888 14.5H14.5001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <div>
+                                    Business. I
                                 </div>
                             </div> 
                             
